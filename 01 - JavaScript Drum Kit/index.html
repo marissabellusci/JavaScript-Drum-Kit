@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>STIZZMAS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -59,7 +59,7 @@
 
 <script>
 
-  window.addEventListener("keydown", function(e) {
+  function playSound(e){
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
 
@@ -71,8 +71,9 @@
     console.log(key);
 
     key.classList.add('playing');
-    
-  });
+  }
+
+  window.addEventListener("keydown", playSound);
 
   function removeTransition(e){
     if (e.propertyName !== 'transform') return; // this line skips it if it's not a transform
