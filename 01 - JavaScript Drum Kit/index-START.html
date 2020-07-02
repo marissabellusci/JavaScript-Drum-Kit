@@ -75,7 +75,11 @@
   });
 
   function removeTransition(e){
-    console.log(e);
+    if (e.propertyName !== 'transform') return; // this line skips it if it's not a transform
+    console.log (e.propertyName);
+
+    this.classList.remove('playing');
+
   }
 
   const keys = document.querySelectorAll('.key');
