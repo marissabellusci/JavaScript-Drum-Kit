@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(https://geneseesun.com/wp-content/uploads/2016/01/012716-statesmen2-300x234.jpg) bottom center;
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.zastavki.com/pictures/1600x1200/2008/3D-graphics_Drums_007006_.jpg) bottom center;
   background-size: cover;
 }
 
@@ -28,7 +28,7 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.6);
   text-shadow: 0 0 .5rem black;
 }
 
